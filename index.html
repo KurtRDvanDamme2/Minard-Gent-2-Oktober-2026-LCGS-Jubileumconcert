@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 Jaar Hand in Hand — Toespraak Voorzitter</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        hih: {
+                            green: '#1E5939',
+                            orange: '#E35220',
+                            sand: '#F5F2EB',
+                            white: '#FFFFFF',
+                            dark: '#2C3531',
+                            gray: '#555F5A'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'asym': '40px 0 40px 0',
+                        'asym-sm': '20px 0 20px 0'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #E5E0D8;
+            color: #2C3531;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            height: 280px;
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed p-4 md:p-8">
+
+    <!-- Main Container -->
+    <div class="max-w-5xl mx-auto bg-hih-white rounded-asym overflow-hidden shadow-2xl">
+        
+        <!-- Hero Section -->
+        <div class="bg-hih-green text-hih-white text-center py-12 px-6 md:px-12 border-b-8 border-hih-orange relative">
+            <div class="text-hih-orange font-bold tracking-widest uppercase text-sm mb-4">
+                Minard Gent • 2 Oktober 2026 • LCGS Jubileumconcert
+            </div>
+            <h1 class="text-4xl md:text-5xl font-black mb-4 uppercase leading-tight">
+                50 Jaar Blijven Pionieren
+            </h1>
+            <p class="text-hih-sand text-lg md:text-xl max-w-2xl mx-auto font-light">
+                "We vonden het 'beschut wonen' uit door simpelweg te luisteren naar de noden van de mensen."
+            </p>
+        </div>
+
+        <!-- Intro Text -->
+        <div class="px-8 py-10 md:px-16 text-center bg-hih-white">
+            <h2 class="text-2xl font-bold text-hih-green mb-4">De Kracht van het Luisteren</h2>
+            <p class="text-hih-gray text-lg max-w-3xl mx-auto">
+                Hand in Hand staat al sinds 1976 aan de zijde van mensen met een psychische kwetsbaarheid. De stichters waren visionairs die begrepen dat mensen nood hadden aan iets heel simpels: <strong>een gewoon huis, met een gewone deur, in een gewone straat.</strong> Vandaag, 50 jaar later, is dat DNA nog steeds onze motor voor innovatie.
+            </p>
+        </div>
+
+        <!-- The 3 Pillars of Care (Cards) -->
+        <div class="bg-hih-sand px-8 py-12 md:px-16">
+            <div class="text-center mb-10">
+                <h3 class="text-hih-green text-xl font-black uppercase tracking-wider">Onze 3 Fundamenten</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Pillar 1 -->
+                <div class="bg-hih-white p-6 rounded-asym-sm border-t-4 border-hih-green shadow-sm hover:-translate-y-1 hover:shadow-md transition duration-300">
+                    <div class="text-3xl mb-3">🏠</div>
+                    <h4 class="font-bold text-hih-dark text-lg mb-2">Beschut Wonen</h4>
+                    <p class="text-sm text-hih-gray mb-3">
+                        Uitgevonden in 1976, pas in 1990 erkend door de overheid (voor 16 personen). Vandaag is het een vitaal netwerk in de GGZ.
+                    </p>
+                    <div class="mt-auto pt-3 border-t border-gray-100 text-xs font-bold text-hih-orange">
+                        Nu: 128 erkende plaatsen (i.s.m. PCGS)
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-hih-white p-6 rounded-asym-sm border-t-4 border-hih-green shadow-sm hover:-translate-y-1 hover:shadow-md transition duration-300">
+                    <div class="text-3xl mb-3">🌳</div>
+                    <h4 class="font-bold text-hih-dark text-lg mb-2">De Moester</h4>
+                    <p class="text-sm text-hih-gray mb-3">
+                        Ontstaan uit de nood aan zinvolle dagbesteding. Werken in de tuin, keuken of het houtatelier. Bondgenoten voor elkaar, ondersteund door schitterende begeleiders.
+                    </p>
+                    <div class="mt-auto pt-3 border-t border-gray-100 text-xs font-bold text-hih-orange">
+                        Nu: 30 à 40 personen per dag
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-hih-white p-6 rounded-asym-sm border-t-4 border-hih-orange shadow-sm hover:-translate-y-1 hover:shadow-md transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-hih-orange text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg">INNOVATIE</div>
+                    <div class="text-3xl mb-3">⏸️</div>
+                    <h4 class="font-bold text-hih-dark text-lg mb-2">De Respijtplek</h4>
+                    <p class="text-sm text-hih-gray mb-3">
+                        Antwoord op burn-outs en stijgende maatschappelijke druk. Een <em>time-out</em> van 1 à 2 weken om een opname in de psychiatrie te vermijden.
+                    </p>
+                    <div class="mt-auto pt-3 border-t border-gray-100 text-xs font-bold text-hih-green">
+                        Van 1 zeecontainer naar 2 volwaardige woningen
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data/Chart Section -->
+        <div class="bg-hih-white px-8 py-12 md:px-16 flex flex-col md:flex-row items-center gap-10">
+            <div class="w-full md:w-1/2">
+                <h3 class="text-2xl font-bold text-hih-dark mb-4">De Evolutie van een Visie</h3>
+                <p class="text-hih-gray text-base leading-relaxed mb-4">
+                    Wat in de jaren '70 begon als een lokaal experiment, is uitgegroeid tot een structurele pijler in de Vlaamse gezondheidszorg. De groei van het aantal erkende plaatsen toont aan dat het 'gewone huis' de standaard is geworden.
+                </p>
+                <div class="bg-hih-sand p-4 rounded-lg border-l-4 border-hih-orange">
+                    <p class="text-sm italic font-medium text-hih-dark">
+                        "Met dezelfde spirit als de pioniers van 1976 zoeken we vandaag nog steeds naar innovatieve oplossingen."
+                    </p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2">
+                <div class="chart-container">
+                    <canvas id="growthChart"></canvas>
+                </div>
+                <div class="text-center text-[10px] text-hih-gray mt-2 uppercase tracking-wide">Evolutie Beschut Wonen (Erkende Plaatsen)</div>
+            </div>
+        </div>
+
+        <!-- The Congress Program -->
+        <div class="bg-hih-green text-hih-white px-8 py-12 md:px-16">
+            <div class="text-center mb-10">
+                <h3 class="text-hih-orange text-2xl font-black uppercase">Het 50-Jaar Jubileum</h3>
+                <p class="text-hih-sand text-sm mt-2">Internationaal Congres: Community Mental Health - Keep It Simple</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-white/10 p-5 rounded-asym-sm border border-white/20">
+                    <div class="text-hih-orange font-bold text-sm mb-1">Woensdag 21 Okt</div>
+                    <h4 class="font-bold text-lg mb-2">Parnassuskerk</h4>
+                    <p class="text-sm text-hih-sand">Feestelijke start met receptie en diner. Uitreiking van de <strong>Community Mental Health Award</strong> (keuze uit 12 innovatieve projecten).</p>
+                </div>
+                <div class="bg-white/10 p-5 rounded-asym-sm border border-white/20">
+                    <div class="text-hih-orange font-bold text-sm mb-1">Donderdag 22 Okt</div>
+                    <h4 class="font-bold text-lg mb-2">Augustijnenklooster</h4>
+                    <p class="text-sm text-hih-sand">Europees Congres met internationaal bekende sprekers en panelgesprekken. <br><span class="text-white font-bold inline-block mt-2">🎉 235 Inschrijvingen!</span></p>
+                </div>
+                <div class="bg-white/10 p-5 rounded-asym-sm border border-white/20">
+                    <div class="text-hih-orange font-bold text-sm mb-1">Vrijdag 23 Okt</div>
+                    <h4 class="font-bold text-lg mb-2">De Moester</h4>
+                    <p class="text-sm text-hih-sand">We gooien de deuren open in Sint-Denijs-Westrem. Demonstraties in ateliers, workshops en ontmoeting op de werkvloer.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Lions Club Tribute -->
+        <div class="bg-hih-sand px-8 py-16 md:px-16 text-center border-t border-gray-200">
+            <div class="inline-block bg-hih-orange text-white text-xs font-bold px-4 py-1 rounded-full mb-6 uppercase tracking-widest">
+                Dankwoord aan LCGS
+            </div>
+            <h2 class="text-3xl font-black text-hih-dark mb-6">
+                Onze "Service Club In Residence"
+            </h2>
+            <div class="max-w-3xl mx-auto bg-hih-white p-8 rounded-asym shadow-lg border border-gray-100 relative">
+                <div class="absolute -top-4 -left-4 text-6xl opacity-20">"</div>
+                <p class="text-hih-gray text-lg md:text-xl font-medium leading-relaxed italic relative z-10">
+                    Grote muziekcentra zoals de Bijloke of Bozar hebben 'artists in residence'. Wij zijn niet groot, maar wij hebben wél een service club in residence. En dit al 20 jaar.
+                    <br><br>
+                    Namens mijn bestuur, onze achterban, onze begeleiders en onze mensen: uit de grond van mijn hart dankbaar voor deze jarenlange, grote en vitale steun.
+                </p>
+                <div class="absolute -bottom-8 -right-4 text-6xl opacity-20 transform rotate-180">"</div>
+            </div>
+            <div class="mt-8 text-hih-dark font-bold">
+                — Etienne van Durme, Voorzitter Hand in Hand vzw
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="max-w-5xl mx-auto text-center mt-6 text-xs text-gray-400">
+        Uittreksel Toespraak Minard • 02/10/2026 • Lions Ghent Sea Port Jubileumconcert
+    </div>
+
+    <!-- Chart Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Chart.defaults.font.family = 'Helvetica Neue, Arial, sans-serif';
+            Chart.defaults.color = '#555F5A';
+
+            const ctx = document.getElementById('growthChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['1976', '1990 (Erkenning)', '2021-Heden'],
+                    datasets: [{
+                        label: 'Erkende Plaatsen Beschut Wonen',
+                        data: [0, 16, 128],
+                        backgroundColor: [
+                            '#F5F2EB', // Sand (invisible essentially for 1976, but shows concept)
+                            '#E35220', // Orange
+                            '#1E5939'  // Green
+                        ],
+                        borderRadius: 8,
+                        borderSkipped: false
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    if(context.raw === 0) return ' Pioniersfase (Nog geen formele erkenning)';
+                                    return ` ${context.raw} Erkende Plaatsen`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: '#EAE5D9'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        }
+                    },
+                    animation: {
+                        duration: 1500,
+                        easing: 'easeOutQuart'
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
